@@ -3,6 +3,19 @@
 
 Restores the Classic Editor and the old-style Edit Post screen layout (TinyMCE, Meta boxes, etc.). Supports the plugins that extend this screen.
 
+## Notes about this fork
+
+This a forked version of the original GitHub repository of the Classic Editor plugin. This repository adds Composer support for the plugin and installs it as a mu-plugin to be used with the [Bedrock Autoloader](https://github.com/roots/bedrock/blob/master/web/app/mu-plugins/bedrock-autoloader.php).
+
+### Installation
+
+You need to have the [Bedrock Autoloader](https://github.com/roots/bedrock/blob/master/web/app/mu-plugins/bedrock-autoloader.php) installed in your mu-plugins folder. After copying the autoloader into your mu-plugins directory, install this with Composer as follows:
+
+```
+composer config repositories.classic-editor git git@github.com:devgeniem/classic-editor.git
+composer require devgeniem/classic-editor
+```
+
 ## Description
 
 <strong>Warning: This is beta software, not recommended for production sites!</strong>
